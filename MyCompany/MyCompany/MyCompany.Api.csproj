@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Title>MyCompany</Title>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyCompany.Core\MyCompany.Core.csproj" />
+    <ProjectReference Include="..\MyCompany.Application\MyCompany.Application.csproj" />
+	<ProjectReference Include="..\MyCompany.Infrastructure\MyCompany.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
